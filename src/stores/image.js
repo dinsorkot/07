@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 export const useImage = defineStore("Image", () => {
   const image = ref([
     {
-        src:'src/assets/News/01.jpg',
+        src:`src/assets/News/01.jpg`,
         alt:'01',
         detail:' สำนักงานฝ่ายเสนาธิการในพระองค์ สำนักพระราชวัง จังหวัดเชียงใหม่ และมหาวิทยาลัยแม่โจ้ ร่วมประชุมเตรียมความพร้อมการรับเสด็จในพิธีพระราชทานปริญญาบัตรมหาวิทยาลัยแม่โจ้ ประจำปีการศึกษา 2564-2565 (ครั้งที่ 45)',
     },
