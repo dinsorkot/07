@@ -4,7 +4,7 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item">
-          <img src="../assets/slide_image/01.jpg" alt="" height="400">
+          <img src="@/assets/slide_image/01.jpg" alt="" height="400">
         </div>
         <div class="carousel-item active carousel-item-start">
           <img src="../assets/slide_image/02.jpg" alt="" height="400">

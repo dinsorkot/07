@@ -8,7 +8,7 @@ const { image } = useImage();
             <div class="card h-card pt-3" style="width: 18rem;" v-for="n in image.length">
                 <div class="d-flex justify-content">
                     <div v-if="image && image[n-1]">
-                        <img :src="image[n-1].src" :alt="image[n-1].alt" width="261">
+                        <img :src="'src/assets/News/'+image[n-1].src" :alt="image[n-1].alt" width="261">
                     </div>
                 </div>
 
