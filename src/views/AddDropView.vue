@@ -30,7 +30,7 @@ const { select, add_subject, remove_subject, restart } = useSelect();
                 <div></div>
             </div>
         </div>
-        <div class="row m-3" v-for="n in select.length" v-if="select && select.length > 0">
+        <div class="row m-3" v-for="n in select.length">
             <div class="col" v-if="select && select[n - 1]">
                 {{ select[n - 1].code }}
             </div>
