@@ -5,7 +5,7 @@ const { course } = useCourse();
 const { select, add_subject, remove_subject, restart } = useSelect();
 async function refreshPage() {
   await new Promise(resolve => setTimeout(resolve, 2000));
-  this.$router.go(0);
+  document.location.reload();
 }
 </script>
 <template>
