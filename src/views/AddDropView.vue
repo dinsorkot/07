@@ -3,10 +3,7 @@ import { useCourse } from '../stores/course';
 import { useSelect } from '../stores/add_drop';
 const { course } = useCourse();
 const { select, add_subject, remove_subject, restart } = useSelect();
-async function refreshPage() {
-  await new Promise(resolve => setTimeout(resolve, 2000));
-  document.location.reload();
-}
+
 </script>
 <template>
     <div class="container mt-5 text-center">
@@ -134,13 +131,13 @@ async function refreshPage() {
                     </div>
                 </div>
                 <div class="modal-foot mt-2 mb-3 text-end ">
-                    <button class=" btn btn-success me-3" data-bs-target="#finish" data-bs-toggle="modal"  @click="refreshPage()">ยืนยัน</button>
+                    <button class=" btn btn-success me-3" data-bs-target="#finish" data-bs-toggle="modal">ยืนยัน</button>
                     <button class="btn btn-danger me-3" data-bs-dismiss="modal" aria-label="Close" >ยกเลิก</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="finish" aria-hidden="true" aria-labelledby="finishToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="finish" aria-hidden="true" aria-labelledby="finishToggleLabel2" tabindex="-1" @click="this.$router.go(0);">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body text-center" style="font-size: larger; color:white;">
