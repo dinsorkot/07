@@ -15,5 +15,8 @@ export const useSelect = defineStore("Select", () => {
   const remove_subject = (n) => {
     select.value.splice(n,1);
   };
-  return { select, add_subject, remove_subject };
+  const restart = () => {
+    select.value.length = 0
+  }
+  return { select, add_subject, remove_subject , restart };
 });

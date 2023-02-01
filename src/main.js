@@ -4,6 +4,7 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
 
+
 import "./assets/main.css";
 // Import all of Bootstrap's CSS
 import"bootstrap/dist/css/bootstrap.css";
